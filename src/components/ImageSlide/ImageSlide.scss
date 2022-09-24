@@ -1,0 +1,40 @@
+.img-list {
+  .swiper-slide {
+    padding-top: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-per {
+    .swiper-slide {
+      cursor: pointer;
+      border: 1px solid #ddd;
+      &-thumb-active {
+        border-color: red;
+      }
+      .wrap {
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  
+}
